@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(34, 34, 34);
+    font-family: "Vibur", sans-serif;
+}
+
+.text-color {
+    color: rgb(24, 125, 192);
+    border-right: .15em solid #fff;
+    animation: blink-caret .65s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #fff
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container>img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(245, 243, 243, 0.062);
+    backdrop-filter: blur(10px);
+    height: 250px;
+    width: 600px;
+    border-radius: 15px;
+    border: 1px solid rgba(139, 139, 139, 0.568);
+}
+
+h1 {
+    color: white;
+}
